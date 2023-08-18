@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Blog</title>
+    <link rel="icon" type="image/png" href="./images/logo.png" />
+
+    <link href="./style.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <ul class="nav-bar">
+                <li class="logo"> <a href="./1index.html"> <img class="logo" src="./images/logo.png" alt="logo"> </a> </li>
+                <li> <a href="./2home.html"> Home </a> </li> 
+                <li class="dropdown"> <a href="./3recipes.html"> Recipes </a>
+                    <ul class="dropdown-options"> 
+                        <li> <a href="./r-bbq.html"> Barbeque </a> </li>
+                        <li> <a href="./r-healthy.html"> Healthy </a> </li>
+                        <li> <a href="./r-instantpot.html"> Instant Pot </a> </li>
+                        <li> <a href="./r-salads.html"> Salads </a> </li>
+                    </ul>
+                </li>
+                <li> <a href="./4whyus.html"> Why Us? </a> </li>
+                <li> <a href="./5foryou.html"> For You </a> </li>
+                <li> <a href="./6contact.html"> Contact </a> </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="form-container">
+            <fieldset id="form-take">
+                <h1>Feedback Form</h1>
+                <h2>This form is used to receive suggestions from the visitors of food blog.
+                    Let us know your suggestions, questions, and concerns or any recipe that
+                    you want us to try by filling out the form below.
+                </h2>
+                <h3> Note: * means required to submit form.</h3>
+                <form action="#" method="get">
+                    <label for="Name">Name*</label>
+                    <input type="text" name="FirstName" id="Name" maxlength="30" placeholder="First name"
+                        required="required"  />
+                    <input type="text" name="LastName" maxlength="30" placeholder="Last name" />
+                    <br /><br />
+                    <label for="phone-num">Phone Number</label>
+                    <input type="text" name="phone-num" id="phone-num" maxlength="11" placeholder="#### #######"  />
+                    <br><br>
+                    <label for="email">Email*</label>
+                    <input type="email" name="email" id="email" maxlength="30" placeholder="abc@example.com"
+                        required="required" />
+                    <br /><br />
+                    <label for="dropdown">
+                        Specify topic?*
+                        <select id="dropdown" name="dropdown" required="required">
+                            <option value="Suggestions" selected>Suggestions</option>
+                            <option value="Questions">Questions</option>
+                            <option value="Concerns">Concerns</option>
+                            <option value="Recipe to Try">Recipe to Try</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </label>
+                    <br />
+                    <textarea id="dropdown-write" name="dropdown" cols="40" rows="6" maxlength="200"
+                        placeholder="Type Here." required="required"></textarea>
+                    <br /><br />
+                    <label for="file">Food Picture Upload</label>
+                    <input type="file" name="file" id="file" required="required" />
+                    <br /><br />
+                    <label for="date">Date of Visit</label>
+                    <input type="date" name="date" id="date" />
+                    <br /><br />
+
+                    <div class="labels">
+                        How likely is it that you would recommend my blog to a friend? *
+                    
+                    <label>
+                        <input type="radio" name="recommendation" value="definitely" /> Definitely
+                    </label>
+                    <label>
+                        <input type="radio" name="recommendation" value="maybe" /> Maybe
+                    </label>
+                    <label>
+                        <input type="radio" name="recommendation" value="notSure" /> Not sure
+                    </label>
+                    <br><br>
+                    </div>
+
+                    <div id="submitButton">
+                        <button id="submit" type="submit" class="btn">Submit</button>
+                    </div>
+                </form>
+            </fieldset>
+
+            
+        </div>
+        <div class="extra-content">
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jIrDJCXC6VY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57959.54834242598!2d67.01358674863279!3d24.77929409999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33d8c82c5c847%3A0xe2af4e5234858b31!2sHOTPOT%20Karachi!5e0!3m2!1sen!2s!4v1692175047515!5m2!1sen!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

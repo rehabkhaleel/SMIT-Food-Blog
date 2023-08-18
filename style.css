@@ -1,0 +1,588 @@
+/* Defining custom font using @font-face */
+@font-face {
+    font-family: 'blogwrite';
+    src: url('./font/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf') format('truetype');
+}
+
+/*main body*/
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(./images/website-bg.jpg);
+    background-size: cover;
+    font-family: 'blogwrite';
+    padding-top: 100px;
+}
+
+/*full top bar*/
+.header {
+    background-color: #333333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/*only containing nav elements*/
+.nav-bar {
+    margin: 0px 3px;
+    padding: 20px 3px;
+}
+
+/*each element of nav bar*/
+.nav-bar li {
+    display: inline-flex;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+/*nav bar links*/
+.nav-bar li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'blogwrite';
+    font-size: 16px;
+}
+
+/*hover over nav bar*/
+li:hover {
+    background-color: gray;
+    border-radius: 20px;
+}
+
+/* logo*/
+.logo {
+    width: 80px;
+    height: 70px;
+    border-radius: 100%;
+    display: inline-block;
+}
+
+/*hover over logo*/
+.logo:hover {
+    border-radius: 100%;
+}
+
+/* drop down list of recipes */
+.dropdown {
+    position: relative;
+}
+
+/*dropdown options of recipes */
+.dropdown-options {
+    display: none;
+    position: absolute;
+    border: 6px double #ccc;
+    list-style: none;
+    margin: 0px;
+    /* Position dropdown options below the parent li */
+    top: 40px;
+    left: -100px;
+    /* Ensure the dropdown appears above other content */
+    z-index: 1000;
+}
+
+/*drop down list hoover*/
+.dropdown:hover .dropdown-options {
+    display: block;
+    background-color: #212528;
+    margin: 0px;
+    padding: 4px;
+    z-index: 2000;
+}
+
+.dropdown-options li:hover {
+    background-color: #6a6e6e;
+}
+
+/*main heading plus button container*/
+.main {
+    margin-top: 30px;
+    position: relative;
+    top: 100px;
+    text-align: center;
+}
+
+/*heading in index.html, heading in home.html*/
+.main h1 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 70px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*get started button in index.html and continue journey in recipes.html*/
+.main a {
+    margin: 6px;
+    background-color: #333333;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.6px;
+    padding: 16px 40px;
+    text-transform: uppercase;
+    border: 3px solid #ffffff;
+    border-radius: 2px;
+}
+
+.main a:hover {
+    background-color: rgb(103, 214, 214);
+}
+
+/* columns at end in index.html*/
+.col a {
+    color: whitesmoke;
+    background-color: #333333;
+    border: 3px solid whitesmoke;
+    font-family: 'blogwrite';
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1.3px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-weight: bold;
+}
+
+.col a:hover {
+    background-color: rgb(103, 214, 214);
+}
+
+/*area below main heading & button, above footer*/
+.supporting {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    width: 100%;
+    clear: both;
+}
+
+/*each column space*/
+.supporting .col {
+    /*to display in line*/
+    float: left;
+    /*to set width of each column*/
+    width: 25%;
+    font-family: 'blogwrite';
+    text-align: center;
+}
+
+/*images of column*/
+.supporting img {
+    height: 50px;
+    border-radius: 10px;
+}
+
+/*recipe short description col*/
+.supporting h2 {
+    font-weight: 600;
+    font-size: 23px;
+    text-transform: uppercase;
+    color: #e0e1ec;
+    font-style: italic;
+    text-decoration: wavy;
+}
+
+/*recipe section(col)*/
+.supporting p {
+    max-width: 100%;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0 50px;
+    /* margin: 40px; */
+    color: rgb(255, 255, 255);
+}
+
+/*giving each column colors*/
+#b1 {
+    background-color: rgb(183, 181, 228);
+}
+
+#h1 {
+    background-color: cadetblue;
+}
+
+#ip1 {
+    background-color: cornflowerblue;
+}
+
+#s1 {
+    background-color: #1182de;
+}
+
+/*styling to columns*/
+#b1,
+#h1,
+#ip1,
+#s1 {
+    border-radius: 20px;
+    margin: 8px;
+    padding: 12px;
+}
+
+.clear {
+    padding: 300px 10px 20px 200px;
+}
+
+/* space below column */
+.clearfix {
+    clear: both;
+}
+
+/*footer*/
+.footer {
+    background-color: #333333;
+    color: #fff;
+    padding: 20px 10px;
+    z-index: 1000;
+}
+
+/*footer para*/
+.footer p {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/*paragraphs in home.html*/
+.main p {
+    font-size: 20px;
+    padding: 20px;
+    margin-left: 20px;
+    margin: 20px;
+}
+
+.main p img {
+    width: 60px;
+    height: 50px;
+    background-color: rgba(218, 210, 206, 255);
+    text-align: center;
+}
+
+#para-one {
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    border-left: 3px solid white;
+    text-align: justify;
+    border-radius: 20px;
+    background-color: rgba(218, 210, 206, 255);
+}
+
+#para-two {
+    border-right: 3px solid white;
+    border-left: 3px solid white;
+    text-align: justify;
+    border-radius: 20px;
+    background-color: rgba(218, 210, 206, 255);
+}
+
+#para-three {
+    border-right: 3px solid white;
+    border-left: 3px solid white;
+    border-radius: 20px;
+    text-align: justify;
+    background-color: rgba(218, 210, 206, 255);
+}
+
+#para-four {
+    border-right: 3px solid white;
+    border-left: 3px solid white;
+    border-radius: 20px;
+    text-align: justify;
+    background-color: rgba(218, 210, 206, 255);
+}
+
+#para-five {
+    border-right: 3px solid white;
+    border-left: 3px solid white;
+    border-radius: 20px;
+    text-align: justify;
+    background-color: rgba(218, 210, 206, 255);
+}
+
+#para-six {
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+    border-left: 3px solid white;
+    border-radius: 20px;
+    text-align: justify;
+    background-color: rgba(218, 210, 206, 255);
+}
+
+/*fun fact*/
+#fun-fact {
+    background-color: #d5ccc7;
+    margin-bottom: 120px;
+}
+
+#fun-fact h2 {
+    font-size: 30px;
+    color: teal;
+}
+
+/*recipes.html */
+/*images in each recipe container*/
+.main img {
+    width: 200px;
+    height: 200px;
+    padding: 3px;
+    margin: 6px;
+    border-radius: 20px;
+}
+
+/*each recipe container*/
+#barbeque {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    background-color: rgb(183, 181, 228);
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 200px;
+}
+
+#healthy {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    background-color: cadetblue;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 200px;
+}
+
+#instant-pot {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    background-color: cornflowerblue;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 200px;
+}
+
+#salads {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    background-color: #1182de;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 200px;
+    margin-bottom: 200px;
+}
+
+/*whyus.html*/
+
+/* para and head section*/
+#why-us-detail {
+    padding-top: 0px;
+    padding-bottom: 200px;
+    margin: 10px;
+}
+
+/*  whyyoushould follow us heading*/
+#why-us-detail h1 {
+    text-align: center;
+    font-size: 60px;
+    color: whitesmoke;
+}
+
+/* paragraph*/
+#why-us-detail p {
+    background-color: rgba(213, 204, 199, 255);
+    text-align: justify;
+    font: 30px bold;
+    min-width: 300px;
+}
+
+/*the follow word linked to contact.html page*/
+#why-us-detail a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    text-transform: lowercase;
+    border: none;
+    background-color: rgba(213, 204, 199, 255);
+    font-size: 30px;
+    color: #212528;
+}
+
+#why-us-detail a:hover {
+    color: blueviolet;
+}
+
+/*first letter of para*/
+#why-us-detail p::first-letter {
+    font-size: 40px;
+}
+
+
+/*foryou.html*/
+
+.form-container {
+    position: static;
+    width: 100%;
+    max-width: 60%;
+    min-width: 40%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/*actual form items*/
+form {
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 10px;
+}
+
+/*label of forms*/
+label,
+.labels {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/*actual form area*/
+#form-take {
+    margin-top: 180px;
+}
+
+#form-take h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+#form-take label {
+    font-size: 20px;
+}
+
+#submitButton {
+    text-align: center;
+}
+
+#submit {
+    font-size: 20px;
+    padding: 20px 30px;
+    border: 3px solid white;
+    background-color: #333333;
+    color: #ffffff;
+    border-radius: 40px;
+}
+
+#submit:hover {
+    background-color: #5e9ccf;
+}
+
+.video-container {
+    margin: 13px;
+    padding-left: 20px;
+}
+
+.map-container {
+    margin: 13px;
+    text-align: center;
+}
+
+.extra-content {
+    display: flex;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+/*contactus.html */
+
+/* e card (for space between header and actual conten)t*/
+#e-card {
+    padding-top: 200px;
+}
+
+/* sites logo*/
+#e-card img {
+    border-radius: 100px;
+    height: 80px;
+}
+
+/* actual container*/
+.content {
+    position: sticky;
+    padding: 200px auto 200px auto;
+    display: flex;
+    padding: 10px auto;
+}
+
+/*links to sites*/
+.content a {
+    font-style: italic;
+    font-size: 18px;
+    color: #333;
+    background-color: #5e9ccf;
+}
+
+/*space between each link site*/
+.content img {
+    padding: 20px;
+}
+
+.conn h1 {
+    padding-left: 100px;
+    background-color: rgba(213, 204, 199, 255);
+}
+
+/*each recipe page*/
+/*barbeque recipes heading*/
+.recipe-heading-main {
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 60px;
+    color: #333333;
+}
+
+/*container for both recipes*/
+.both-recipe {
+    display: flex;
+}
+
+/*each recipe col width*/
+.both-recipe .main {
+    width: 50%;
+    margin-bottom: 100px;
+}
+
+/*each recipe specs*/
+.main .each-recipe {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+/*kofte and corn heading*/
+.each-recipe h2 {
+    background-color: rgba(218, 210, 206, 255);
+    padding: 3px;
+    margin: 5px;
+}
+
+.each-recipe p {
+    background-color: rgba(218, 210, 206, 255);
+}
+
+.each-recipe li {
+    text-align: left;
+}
+
+.each-recipe li:hover {
+    background-color: rgba(218, 210, 206, 255);
+}
